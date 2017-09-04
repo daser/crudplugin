@@ -1,0 +1,21 @@
+{
+  "name": "dynamiccrud",
+  "version": "1.0.0",
+  "description": "This service creates dynamic crud",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daser David",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "body-parser": "^1.17.2",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.4",
+    "lodash": "^4.17.4",
+    "log4js": "^2.3.3",
+    "mongodb": "^2.2.31",
+    "util": "^0.10.3"
+  }
+}
