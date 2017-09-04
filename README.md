@@ -15,6 +15,7 @@ To start this service: NODE_ENV=development node server.js
 
 
    For single record, the method would require the collection name in this case i used "user" and a data object containing the field names with their corresponding values
+```
 
     {
         "collection" : "users",
@@ -24,6 +25,9 @@ To start this service: NODE_ENV=development node server.js
             "address":"nhub"
         }
     }
+
+```
+
 
    For multiple records, the method would require the collection name in this case i used "user" and  data which is an array of objects containing the field names with their corresponding values per record.
 
