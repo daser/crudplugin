@@ -56,17 +56,19 @@ Method: POST
    As a matter of convention in this microservice, collection key contains the name of the collection as value. Then the rowfiler is an object containing the deletion criteria. See two examples below: 
 
    This deletes a document with lname equals to david.
-
+   ```
    {
         "collection" :"users",
         "rowfilter" : {
             "lname" : "david"
         }
     }
+    ```
 
 
    This deletes a document with fname equals to daser.
 
+    ```
 
    {
         "collection" :"users",
@@ -74,6 +76,7 @@ Method: POST
             "fname" : "daser"
         }
     }
+```
 
 
 Route: api/deleteRecord
@@ -82,6 +85,7 @@ Method: DELETE
 3. The functions updateRecord, request structure exemplified below:
 
     Collection is collection name, filter is the record we are searching by to update and update is the field we are editing and the value. So in this case, giving users collection, we want to edit change the lname of a user whose fname is zipporah to daser.
+```
 
    {
         "collection": "users", //name of table
@@ -93,6 +97,9 @@ Method: DELETE
         }
     }
 
+```
+
+
     Route:  api/createNewRecord
     Method: PUT
 
@@ -101,6 +108,7 @@ Method: DELETE
 4. The method getAllRecords, request structure exemplified below:
 
     Returns all records from users collection with fname equals to zipporah
+```
 
     {
         "collection" : "users",
@@ -108,9 +116,11 @@ Method: DELETE
             "fname":"zipporah"
         }
     }
-  
+ ```
+ 
     Returns all records from users collection with fname equals to zipporah and lname equals dasers
 
+```
 
     {
         "collection" : "users",
@@ -119,6 +129,7 @@ Method: DELETE
             "lname":"dasers"
         }
     }
+```
 
     Route:  api/deleteRecord
     Method: POST
